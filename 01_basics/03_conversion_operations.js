@@ -31,8 +31,34 @@ let somenumber = 23
 
 let stringNumber = String(somenumber)
 
-console.log(typeof stringNumber)
+//console.log(typeof stringNumber)
 
-console.log(stringNumber);
+//console.log(stringNumber);
 
+
+//*************  Comparison *************/
+
+//console.log("2" > 1); //true
+//console.log(1 < "2"); // true
+
+// console.log(null > 0) // false
+// console.log(null == 0) // false
+// console.log(null >= 0) //true
+
+/* THE REASON is that an equality check == and comparisons > < >= <= works 
+differently.
+
+Comparison covert null to a number and treat it as 0.
+that's why the 3rd null >= 0 is true,
+and 1st null > 0 is false
+*/
+
+// console.log(undefined == 0); // false
+// console.log(undefined > 0); // false
+// console.log(undefined < 0); //false
+
+// === checks value and datatypes 
+
+// console.log("2" == 2) // true because of type conversion
+// console.log("2" === 2) // false because there's no type conversion
 
