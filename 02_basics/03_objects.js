@@ -62,3 +62,20 @@ const User = [
 
 console.log(tinderUser.hasOwnProperty('name')) // checks if it contains this property or not return boolean 
 
+//Object De-structure (Destructuring)
+
+const course = {
+    courseName :"Js Revision",
+    price: 999,
+    courseInstructor : "Hitesh"
+}
+
+//const {courseInstructor} = course
+
+const {courseInstructor : instructor} = course
+//console.log(courseInstructor)
+console.log(instructor) //Hitesh
+
+
+
+
