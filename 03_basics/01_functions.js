@@ -35,4 +35,54 @@ function justLoggedIn (username = "sanjay"){ //if we want a default value userna
 //console.log(justLoggedIn(""))   // just logged in 
 
 //console.log(justLoggedIn()) //undefined just logged in 
-console.log(justLoggedIn("Sam")) //after condition: Please enter username 
+//console.log(justLoggedIn("Sam")) //after condition: Please enter username 
+
+
+function calculateCartPrice (val1,val2, ...num1){ //if we don't know how may parameter we'll need
+// we you rest operator ...num1
+// if we have val1, val2 before the resto operator so the first two values will
+// be in val1,val2 and the rest will go in num1
+
+    return num1
+}
+//console.log(calculateCartPrice(20,30,40,50))
+
+//after val1, val2
+console.log(calculateCartPrice(20,30,40,50)) // [40,50]
+
+
+//Objects in Function
+
+const user = {
+    username : "Sanjay",
+    price : 999
+}
+
+function handleObject(anyobject){
+
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+
+//handleObject(user)
+// we can also directly pass any object
+
+handleObject({
+    username:"Sam",
+    price:399
+})
+
+
+//Array in function
+
+const mynewarray = [200,400,600]
+
+function returnSecondValue (anyArray){
+    console.log(anyArray[1]);
+}
+
+//returnSecondValue(mynewarray) 400
+
+//can also give the array directly
+
+returnSecondValue([1,3,4,5])
